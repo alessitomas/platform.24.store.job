@@ -1,1 +1,1 @@
-# platform.24.store.job
+# platform.24.store.account
