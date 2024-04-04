@@ -30,8 +30,7 @@ public interface JobController {
 
     @GetMapping("/jobs")
     public ResponseEntity<JobOut> read(
-        @RequestHeader(required = true, name = "id-user") String idUser,
-        @RequestHeader(required = true, name = "role-user") String roleUser
+        @RequestHeader(required = true, name = "id-job") String idJob
     );
     
 }
