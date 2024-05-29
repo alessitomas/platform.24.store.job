@@ -14,12 +14,11 @@ public interface JobController {
 
     @PostMapping("/jobs")
     public ResponseEntity<JobOut> create(
-        @RequestBody(required = true) JobIn in
-    );
+            @RequestBody(required = true) JobIn in);
 
     // @PostMapping("/Jobs/login")
     // public ResponseEntity<JobOut> login(
-    //     @RequestBody(required = true) LoginIn in
+    // @RequestBody(required = true) LoginIn in
     // );
 
     // @PutMapping("/jobs/{id}")
@@ -30,7 +29,8 @@ public interface JobController {
 
     @GetMapping("/jobs")
     public ResponseEntity<JobOut> read(
-        @RequestHeader(required = true, name = "id-job") String idJob
-    );
+            @RequestHeader(required = true, name = "id-job") String idJob);
+
     
+
 }
