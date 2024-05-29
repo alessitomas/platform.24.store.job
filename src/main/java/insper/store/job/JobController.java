@@ -22,11 +22,11 @@ public interface JobController {
     //     @RequestBody(required = true) LoginIn in
     // );
 
-    @PutMapping("/jobs/{id}")
-    public ResponseEntity<JobOut> update(
-        @PathVariable(required = true) String id,
-        @RequestBody(required = true) JobIn in
-    );
+    // @PutMapping("/jobs/{id}")
+    // public ResponseEntity<JobOut> update(
+    //     @PathVariable(required = true) String id,
+    //     @RequestBody(required = true) JobIn in
+    // );
 
     @GetMapping("/jobs")
     public ResponseEntity<JobOut> read(
